@@ -1,11 +1,15 @@
 <body>
-	{{renderPage}}
+	<div class="container">
+		{{renderPage}}
+	</div>
 </body>
 
 <template name="layout">
-	<ul>
-		<li><a href="{{pathFor 'home'}}">Home</a></li>
-		<li><a href="{{pathFor 'dogs'}}">Dogs</a></li>
-	</ul>
-	{{> yield}}
+	<div class="container">
+		<ul>
+			<li><a href="{{pathFor 'home'}}">Home</a></li>
+			<li><a href="{{pathFor 'dogs'}}">Dogs</a></li>
+		</ul>
+		{{> yield}}
+	</div>
 </template>

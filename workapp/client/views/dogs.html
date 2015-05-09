@@ -1,7 +1,9 @@
 <template name="dogs">
+	{{> quickForm collection="Dogs" id="insertDogForm" type="insert"}}
 	<ul>
 	{{#each dogs}}
 		<li>{{name}}</li>
+		<li>{{birthday}}</li>
 	{{/each}}
 	</ul>
 </template>
